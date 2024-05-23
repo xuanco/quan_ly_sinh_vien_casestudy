@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sinh Viên</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<img src="https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-6/433416567_872264511586952_3713608347092167155_n.png?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHyhvk7cJs_Hqh-oDQ9euKORctVgJdk7axFy1WAl2TtrFZx0QVEFfZ1tgWrKo1dGtBSjMprSyT2qSrgtaX_vzLq&_nc_ohc=o4kHR92559MQ7kNvgEk_qef&_nc_ht=scontent.fsgn20-1.fna&cb_e2o_trans=t&oh=00_AYCsZ5-s_5b5Bto7YnfcgR8UcudcPQFN22PgPSq9tYeeXA&oe=6654ECA1" id="logo">
+<h1> Quản lý sinh viên </h1>
+<table style=" border: 1px solid black; width: 700px; float: right">
+    <tr>
+        <th style="font-size: 40px" colspan="7">Danh sách Sinh viên</th>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>Họ tên</th>
+        <th>Ngày sinh</th>
+        <th>Giới tính</th>
+        <th>Lớp</th>
+        <th>Ảnh</th>
+        <th>Tùy chọn</th>
+
+    </tr>
+    <tbody id="list-student">
+
+    </tbody>
+</table>
+
+<table border="1" style="width: 500px; height: 300px" ;>
+    <tr id="id1">
+        <th colspan="2"> Thông tin sinh viên</th>
+    </tr>
+
+    <tr>
+        <th>ID</th>
+        <td><input type="number" id="id"></td>
+
+    </tr>
+    <tr>
+        <th>Họ tên</th>
+        <td><input type="text" id="fullname"></td>
+    </tr>
+    <tr>
+        <th>Ngày sinh</th>
+        <td><input type="text" id="date"></td>
+    </tr>
+    <tr>
+        <th>Giới tính</th>
+        <td><input type="text" id="gender"></td>
+    </tr>
+    <tr>
+        <th>Lớp</th>
+        <td><input type="text" id="grade"></td>
+    </tr>
+    <tr>
+        <th>Ảnh</th>
+        <td><input type="text" id="img"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>
+            <button style="background-color: blue" id="add" onclick="addStudent()">Add</button>
+            <button style="background-color: blue" id="edit" onclick="updateStudent()">Save</button>
+        </td>
+    </tr>
+</table>
+<script src="./StudentManagement.js"></script>
+<script src="./Student.js"></script>
+<script src="./main.js"></script>
+
+</body>
+</html>
