@@ -46,7 +46,7 @@ function editStudent(id){
     studentId = id;
 }
 
-function updateStudent(){
+function updateStudent() {
     let id = document.getElementById('id').value;
     let name = document.getElementById('fullname').value;
     let date = document.getElementById('date').value;
@@ -55,7 +55,7 @@ function updateStudent(){
     let img = document.getElementById('img').value;
 
     let student = manage.findStudentById(studentId);
-    manage.edit(student,id,name,date,gender,grade, img);
+    manage.edit(student, id, name, date, gender, grade, img);
     manage.showList();
     clear();
 }
